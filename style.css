@@ -1,0 +1,29 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+p
+{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+	font-size: 3em;
+	color: #ccc;
+	text-transform: uppercase;
+}
+p:before
+{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #262626;
+	width: 0%;
+	overflow: hidden;
+	transition: 1s;
+}
+p:hover:before
+{
+	width: 100%;
+}
